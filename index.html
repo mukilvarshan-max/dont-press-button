@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Don't Press The Button</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+    </div>
+
+    <main class="game">
+
+        <header>
+            <div>
+                <p class="eyebrow">A completely unnecessary experiment</p>
+                <h1>DON'T PRESS<br><span>THE BUTTON</span></h1>
+            </div>
+
+            <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">
+                🌙
+            </button>
+        </header>
+
+        <section class="stats">
+
+            <div class="stat">
+                <span>Score</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Best</span>
+                <strong id="best">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Clicks</span>
+                <strong id="clicks">0</strong>
+            </div>
+
+        </section>
+
+        <section class="play-area" id="playArea">
+
+            <div class="message-box">
+                <p id="message">You know you want to press it...</p>
+            </div>
+
+            <button id="mainButton" class="main-button">
+                <span class="button-icon">🔴</span>
+                <span>PRESS ME</span>
+            </button>
+
+            <div id="particles"></div>
+
+        </section>
+
+        <section class="controls">
+
+            <button id="resetBtn" class="control-btn">
+                ↻ Reset
+            </button>
+
+            <button id="challengeBtn" class="control-btn challenge">
+                ⚡ Challenge
+            </button>
+
+        </section>
+
+        <footer>
+            <p>Every click makes absolutely no difference.</p>
+            <p class="secret">Psst... try the keyboard 👀</p>
+        </footer>
+
+    </main>
+
+    <div id="modal" class="modal hidden">
+
+        <div class="modal-card">
+
+            <button id="closeModal" class="close-btn">×</button>
+
+            <div class="modal-icon">🏆</div>
+
+            <h2>Challenge Complete!</h2>
+
+            <p id="finalMessage">
+                You survived the button.
+            </p>
+
+            <div class="final-score">
+                <span>Final Score</span>
+                <strong id="finalScore">0</strong>
+            </div>
+
+            <button id="playAgain" class="play-again">
+                Play Again
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
